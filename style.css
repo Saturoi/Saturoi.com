@@ -12,11 +12,10 @@
 }
 
 ::selection {
-    background-color:  rgb(45, 80, 45); /* لون خلفية التحديد (هنا استخدمت اللون الأخضر الخاص بأزرارك) */
-    color: rgb(210, 175, 210); /* لون النص عند التحديد (أبيض ليكون واضحاً) */
-}
+    background-color:  rgb(45, 80, 45);
+    color: rgb(210, 175, 210);
 
-/* إعدادات عامة */
+
 body {
     background-color: rgb(0, 0, 0);
     color: rgb(200, 200, 200);
@@ -28,7 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    direction: rtl; /* لتوافق اللغة العربية */
+    direction: rtl;
     text-align: center;
 }
 h1 {
@@ -46,7 +45,7 @@ p {
     font-size: 1.25rem;
 }
 
-/* الحاوية الرئيسية لتوزيع المساحات */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -56,41 +55,36 @@ p {
     width: 100%;
 }
 
-/* ========================================= */
-/* تنسيقات قائمة المشاريع والمقالات */
-/* ========================================= */
 
-/* الحاوية التي تضم القائمة بأكملها */
 .list-container {
     display: flex;
-    flex-direction: column; /* لترتيب العناصر بشكل رأسي (تحت بعضها) */
-    gap: 20px; /* المسافة بين المستطيلات */
+    flex-direction: column;
+    gap: 20px; 
     width: 380px;
-    margin: 40px auto; /* لتوسيط الحاوية في منتصف الصفحة */
+    margin: 40px auto; 
 }
 
-/* المستطيل الواحد (رابط المشروع أو المقال) */
 .list-item {
-    display: block; /* ليأخذ العرض كاملاً ويكون المستطيل كله قابلاً للنقر */
+    display: block;
     background-color: transparent;
     color: rgb(225, 225, 225);
     text-decoration: none;
     padding: 10px 10px;
-    border: 1px solid rgb(70, 70, 70); /* نفس إطار أزرار التنقل في الأسفل */
-    border-radius: 15px; /* نفس درجة انحناء الزوايا */
-    text-align: center; /* توسيط النص داخل المستطيل كما في صورتك */
-    transition: all 0.25s ease; /* حركة ناعمة عند مرور الماوس */
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px; 
+    text-align: center; 
+    transition: all 0.25s ease;
 }
 
-/* تأثير مرور الماوس (يتطابق مع الزر الأخضر النشط) */
+
 .list-item:hover {
-    background-color: rgba(15, 15, 15); /* تفتيح خفيف للخلفية */
-    border-color: rgb(80, 180, 80); /* الإطار يصبح أخضر */
-    box-shadow: 0 0 8px rgb(45, 80, 45); /* توهج أخضر */
-    transform: translateY(-3px); /* حركة خفيفة جداً للأعلى تعطي شعوراً بالتفاعل */
+    background-color: rgba(15, 15, 15);
+    border-color: rgb(80, 180, 80);
+    box-shadow: 0 0 8px rgb(45, 80, 45);
+    transform: translateY(-3px);
 }
 
-/* تنسيق النصوص داخل المستطيل (اختياري لترتيب العنوان والوصف) */
+
 .list-item h2 {
     margin: 0;
     font-size: 1.25rem;
@@ -99,18 +93,19 @@ p {
 .list-item p {
     margin: 8px 0 0 0;
     font-size: 0.9rem;
-    color: rgb(170, 170, 170); /* لون رمادي للوصف لتمييزه عن العنوان */
+    color: rgb(170, 170, 170);
 }
 
-/* التأثيرات البصرية للنصوص */
+
 .glitch-title {
     font-size: 4rem;
     text-shadow: 5px -5px 10px rgb(0, 130, 130), -5px 5px 10px rgb(255, 125, 125), 0 0 30px rgb(0, 0, 0);
     margin-bottom: 70px;
+    max-width: 100%;
 }
 
 
-/* نصوص الفقرات */
+
 .description {
     line-height: 2;
     max-width: 600px;
@@ -118,32 +113,31 @@ p {
     margin: 80px auto;
 }
 
-/* الأيقونات الاجتماعية */
+
 .social-icons {
-    display: flex; /* ضروري جداً لكي تعمل خاصية gap */
-    justify-content: center; /* (اختياري) لوضع الأيقونات في منتصف الشاشة */
-    gap: 50px; /* الآن ستعمل المسافة بشكل صحيح */
+    display: flex; 
+    justify-content: center; 
+    gap: 50px;
     margin-bottom: 80px;
     transition: all 0.25s ease;
 }
 
-/* التخلص من الخطوط البنفسجية للروابط */
-/* إعداد الروابط (الأيقونات) لتكون جاهزة للحركة */
+
 .social-icons a {
     text-decoration: none;
-    transition: all 0.3s ease; /* يجعل ظهور اللون ناعماً وليس مفاجئاً */
-    padding: 10px; /* مساحة حول الأيقونة لكي لا يكون اللون الأخضر ملتصقاً بها */
-    border-radius: 50%; /* لجعل شكل التحديد دائرياً وجميلاً */
-    display: inline-flex; /* لضبط التوسيط الداخلي */
+    transition: all 0.3s ease;
+    padding: 10px; 
+    border-radius: 50%;
+    display: inline-flex;
 }
 
-/* ✔️ الكود الصحيح: تفعيل التأثير على كل أيقونة لوحدها عند مرور الماوس */
+
 .social-icons a:hover {
-    background-color: rgb(45, 80, 45); /* لون أخضر شفاف متناسق مع أزرار النافيقيشن */
-    transform: scale(1.15); /* تكبير الأيقونة بنسبة 15% كحركة تفاعلية */
+    background-color: rgb(45, 80, 45);
+    transform: scale(1.15);
 }
 
-/* شريط التنقل السفلي */
+
 .nav-menu {
     display: flex;
     gap: 15px;
