@@ -1,21 +1,25 @@
 @font-face {
     font-family: 'ArefRuqaa-Bold'; 
     src: url('fonts/ArefRuqaa-Bold.ttf') format('truetype');
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'Amiri-Regular'; 
     src: url('fonts/Amiri-Regular.ttf') format('truetype');
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'ae_furat_regular'; 
     src: url('fonts/ae_furat_regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 ::selection {
-    background-color:  rgb(45, 80, 45);
+    background-color: rgb(45, 80, 45);
     color: rgb(210, 175, 210);
 }
-
 
 body {
     background-color: rgb(0, 0, 0);
@@ -31,21 +35,23 @@ body {
     direction: rtl;
     text-align: center;
 }
+
 h1 {
     font-family: 'ArefRuqaa-Bold', sans-serif;
     letter-spacing: 1px;
     font-size: 3rem;
 }
+
 h2 {
     font-family: 'ae_furat_regular', sans-serif;
     letter-spacing: 1px;
 }
+
 p {
     font-family: 'Amiri-Regular', sans-serif;
     line-height: 1.8;
     font-size: 1.25rem;
 }
-
 
 .container {
     display: flex;
@@ -55,7 +61,6 @@ p {
     min-height: 80vh;
     width: 100%;
 }
-
 
 .list-container {
     display: flex;
@@ -77,14 +82,12 @@ p {
     transition: all 0.25s ease;
 }
 
-
 .list-item:hover {
     background-color: rgba(15, 15, 15);
     border-color: rgb(80, 180, 80);
     box-shadow: 0 0 8px rgb(45, 80, 45);
     transform: translateY(-3px);
 }
-
 
 .list-item h2 {
     margin: 0;
@@ -97,15 +100,12 @@ p {
     color: rgb(170, 170, 170);
 }
 
-
 .glitch-title {
     font-size: 4rem;
     text-shadow: 5px -5px 10px rgb(0, 130, 130), -5px 5px 10px rgb(255, 125, 125), 0 0 30px rgb(0, 0, 0);
     margin-bottom: 70px;
     max-width: 100%;
 }
-
-
 
 .description {
     line-height: 2;
@@ -114,15 +114,12 @@ p {
     margin: 80px auto;
 }
 
-
 .social-icons {
     display: flex; 
     justify-content: center; 
     gap: 50px;
     margin-bottom: 80px;
-    transition: all 0.25s ease;
 }
-
 
 .social-icons a {
     text-decoration: none;
@@ -132,12 +129,10 @@ p {
     display: inline-flex;
 }
 
-
 .social-icons a:hover {
     background-color: rgb(45, 80, 45);
     transform: scale(1.15);
 }
-
 
 .nav-menu {
     display: flex;
@@ -162,6 +157,6 @@ p {
 }
 
 .nav-btn.active {
-    border-color: rgb(80, 180, 80); /* الإطار الأخضر الخفيف */
+    border-color: rgb(80, 180, 80); 
     box-shadow: 0 0 8px rgb(45, 80, 45);
 }
