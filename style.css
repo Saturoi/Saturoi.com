@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'ArefRuqaa-Bold'; 
+    font-family: 'ArefRuqaa-Bold';
     src: url('fonts/ArefRuqaa-Bold.ttf') format('truetype');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amiri-Regular'; 
+    font-family: 'Amiri-Regular';
     src: url('fonts/Amiri-Regular.ttf') format('truetype');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'ae_furat_regular'; 
+    font-family: 'ae_furat_regular';
     src: url('fonts/ae_furat_regular.ttf') format('truetype');
     font-display: swap;
 }
@@ -51,6 +51,7 @@ p {
     font-family: 'Amiri-Regular', sans-serif;
     line-height: 1.8;
     font-size: 1.25rem;
+
 }
 
 .container {
@@ -61,13 +62,17 @@ p {
     min-height: 80vh;
     width: 100%;
 }
+.content-top{
+    align-items: center;
+
+}
 
 .list-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     width: 380px;
-    margin: 40px auto; 
+    margin: 40px auto;
 }
 
 .list-item {
@@ -77,8 +82,8 @@ p {
     text-decoration: none;
     padding: 10px 10px;
     border: 1px solid rgb(70, 70, 70);
-    border-radius: 15px; 
-    text-align: center; 
+    border-radius: 15px;
+    text-align: center;
     transition: all 0.25s ease;
 }
 
@@ -101,30 +106,33 @@ p {
 }
 
 .glitch-title {
-    font-size: 4rem;
-    text-shadow: 5px -5px 10px rgb(0, 130, 130), -5px 5px 10px rgb(255, 125, 125), 0 0 30px rgb(0, 0, 0);
-    margin-bottom: 70px;
-    max-width: 100%;
+    font-size:calc(100% + 4vw);
+    text-shadow: 4px -4px 10px rgb(0, 130, 130), -4px 4px 10px rgb(255, 125, 125), 0 0 30px rgb(0, 0, 0);
+    margin-bottom: 60px;
+    padding: 10px;
+    align-self: center;
 }
 
 .description {
     line-height: 2;
     max-width: 600px;
-    font-size: 1.1rem;
-    margin: 80px auto;
+    font-size: 1.3rem;
+    margin: 70px auto;
+    padding: 10px;
+    text-align: center;
 }
 
 .social-icons {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     gap: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .social-icons a {
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 50%;
     display: inline-flex;
 }
@@ -137,6 +145,7 @@ p {
 .nav-menu {
     display: flex;
     gap: 15px;
+    margin-bottom: 10px;
 }
 
 .nav-btn {
@@ -157,6 +166,6 @@ p {
 }
 
 .nav-btn.active {
-    border-color: rgb(80, 180, 80); 
+    border-color: rgb(80, 180, 80);
     box-shadow: 0 0 8px rgb(45, 80, 45);
 }
